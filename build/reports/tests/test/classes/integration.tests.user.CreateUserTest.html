@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Create User API Test</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Create User API Test</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/integration.tests.user.html">integration.tests.user</a> &gt; CreateUserTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">11</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">9.079s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">When register a Admin user, then user should be saved with success</td>
+<td class="success">whenRegisterAdminUserItShouldBeSaveWithSuccess()</td>
+<td class="success">0.867s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When register a user, then user should be saved with success</td>
+<td class="success">whenRegisterUserItShouldBeSaveWithSuccess()</td>
+<td class="success">0.963s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When register a user with a empty name, then user should not be created</td>
+<td class="success">whenRegisterUserWithEmptyNameShouldNotBeCreated()</td>
+<td class="success">0.517s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When register a user with a existent email, then user should not be created</td>
+<td class="success">whenRegisterUserWithExistentEmailShouldNotBeCreated()</td>
+<td class="success">1.639s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When register a user with a Invalid Admin type, then user should not be created</td>
+<td class="success">whenRegisterUserWithInvalidAdminTypeShouldNotBeCreated()</td>
+<td class="success">0.473s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When register a user with null email, then user should not be created</td>
+<td class="success">whenRegisterUserWithNullEmailShouldNotBeCreated()</td>
+<td class="success">0.503s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When register a user with null name, then user should not be created</td>
+<td class="success">whenRegisterUserWithNullNameShouldNotBeCreated()</td>
+<td class="success">0.452s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When register a user with null password, then user should not be created</td>
+<td class="success">whenRegisterUserWithNullPasswordShouldNotBeCreated()</td>
+<td class="success">0.518s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When register a user without Admin type, then user should not be created</td>
+<td class="success">whenRegisterUserWithoutAdminTypeShouldNotBeCreated()</td>
+<td class="success">2.232s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When register a user with a empty email, then user should not be created</td>
+<td class="success">whenRegisterUserWithoutEmailShouldNotBeCreated()</td>
+<td class="success">0.448s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When register a user without password, then user should not be created</td>
+<td class="success">whenRegisterUserWithoutPasswordShouldNotBeCreated()</td>
+<td class="success">0.467s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request method:	POST
+Request URI:	https://serverest.dev/usuarios/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;nome&quot;: &quot;Harley&quot;,
+    &quot;email&quot;: &quot;jarrett.goyette@yahoo.com&quot;,
+    &quot;password&quot;: &quot;teste&quot;,
+    &quot;administrador&quot;: &quot;&quot;
+}
+Request method:	POST
+Request URI:	https://serverest.dev/usuarios/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;nome&quot;: &quot;Verona&quot;,
+    &quot;email&quot;: null,
+    &quot;password&quot;: &quot;teste&quot;,
+    &quot;administrador&quot;: &quot;true&quot;
+}
+Request method:	POST
+Request URI:	https://serverest.dev/usuarios/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;nome&quot;: &quot;Dr. Christina Kuhlman&quot;,
+    &quot;email&quot;: &quot;jeff.homenick@yahoo.com&quot;,
+    &quot;password&quot;: &quot;test&quot;,
+    &quot;administrador&quot;: &quot;false&quot;
+}
+HTTP/1.1 201 Created
+Date: Mon, 27 Dec 2021 19:41:57 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 82
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+x-dns-prefetch-control: off
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=15552000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+x-moesif-transaction-id: db6c39f3-9f71-4af1-afdd-5f23731dbc57
+
+{
+    &quot;message&quot;: &quot;Cadastro realizado com sucesso&quot;,
+    &quot;_id&quot;: &quot;ycn9G5KWjSo7YCe6&quot;
+}
+Request method:	POST
+Request URI:	https://serverest.dev/usuarios/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;nome&quot;: &quot;Brock&quot;,
+    &quot;email&quot;: &quot;theron.mayert@hotmail.com&quot;,
+    &quot;password&quot;: &quot;teste&quot;,
+    &quot;administrador&quot;: &quot;teste&quot;
+}
+Request method:	POST
+Request URI:	https://serverest.dev/usuarios/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;nome&quot;: null,
+    &quot;email&quot;: &quot;rosalind.ullrich@yahoo.com&quot;,
+    &quot;password&quot;: &quot;teste&quot;,
+    &quot;administrador&quot;: &quot;true&quot;
+}
+Request method:	POST
+Request URI:	https://serverest.dev/usuarios/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;nome&quot;: &quot;Jae Witting&quot;,
+    &quot;email&quot;: &quot;annamae.skiles@hotmail.com&quot;,
+    &quot;password&quot;: &quot;test&quot;,
+    &quot;administrador&quot;: &quot;false&quot;
+}
+Request method:	POST
+Request URI:	https://serverest.dev/usuarios/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;nome&quot;: &quot;Jae Witting&quot;,
+    &quot;email&quot;: &quot;annamae.skiles@hotmail.com&quot;,
+    &quot;password&quot;: &quot;test&quot;,
+    &quot;administrador&quot;: &quot;false&quot;
+}
+Request method:	POST
+Request URI:	https://serverest.dev/usuarios/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;nome&quot;: &quot;Dagny&quot;,
+    &quot;email&quot;: &quot;&quot;,
+    &quot;password&quot;: &quot;teste&quot;,
+    &quot;administrador&quot;: &quot;true&quot;
+}
+Request method:	POST
+Request URI:	https://serverest.dev/usuarios/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;nome&quot;: &quot;Walker&quot;,
+    &quot;email&quot;: &quot;marva.collier@gmail.com&quot;,
+    &quot;password&quot;: &quot;teste&quot;,
+    &quot;administrador&quot;: &quot;true&quot;
+}
+HTTP/1.1 201 Created
+Date: Mon, 27 Dec 2021 19:42:01 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 82
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+x-dns-prefetch-control: off
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=15552000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+x-moesif-transaction-id: 0a14f3c4-0a6d-406a-abd6-3d426afcb6dc
+
+{
+    &quot;message&quot;: &quot;Cadastro realizado com sucesso&quot;,
+    &quot;_id&quot;: &quot;cjmn5vl2u3VhFObV&quot;
+}
+Request method:	POST
+Request URI:	https://serverest.dev/usuarios/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;nome&quot;: &quot;Altagracia&quot;,
+    &quot;email&quot;: &quot;marica.schulist@gmail.com&quot;,
+    &quot;password&quot;: &quot;&quot;,
+    &quot;administrador&quot;: &quot;true&quot;
+}
+Request method:	POST
+Request URI:	https://serverest.dev/usuarios/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;nome&quot;: &quot;&quot;,
+    &quot;email&quot;: &quot;cleo.goldner@hotmail.com&quot;,
+    &quot;password&quot;: &quot;teste&quot;,
+    &quot;administrador&quot;: &quot;true&quot;
+}
+Request method:	POST
+Request URI:	https://serverest.dev/usuarios/
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;nome&quot;: &quot;Esta&quot;,
+    &quot;email&quot;: &quot;deshawn.bayer@gmail.com&quot;,
+    &quot;password&quot;: null,
+    &quot;administrador&quot;: &quot;true&quot;
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at Dec 27, 2021 4:46:22 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+Request method:	POST
+-Request URI:	https://serverest.dev/usuarios/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": "Harley",
+*    "email": "jarrett.goyette@yahoo.com",
+    "password": "teste",
+    "administrador": ""
+}
+Request method:	POST
+-Request URI:	https://serverest.dev/usuarios/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": "Verona",
+    "email": null,
+    "password": "teste",
+    "administrador": "true"
+}
+Request method:	POST
+-Request URI:	https://serverest.dev/usuarios/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+%    "nome": "Dr. Christina Kuhlman",
+(    "email": "jeff.homenick@yahoo.com",
+    "password": "test",
+    "administrador": "false"
+}
+HTTP/1.1 201 Created
+$Date: Mon, 27 Dec 2021 19:41:57 GMT
+.Content-Type: application/json; charset=utf-8
+Content-Length: 82
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+x-dns-prefetch-control: off
+x-frame-options: SAMEORIGIN
+?strict-transport-security: max-age=15552000; includeSubDomains
+x-download-options: noopen
+ x-content-type-options: nosniff
+ x-xss-protection: 1; mode=block
+>x-moesif-transaction-id: db6c39f3-9f71-4af1-afdd-5f23731dbc57
+
+{
+1    "message": "Cadastro realizado com sucesso",
+    "_id": "ycn9G5KWjSo7YCe6"
+}
+Request method:	POST
+-Request URI:	https://serverest.dev/usuarios/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": "Brock",
+*    "email": "theron.mayert@hotmail.com",
+    "password": "teste",
+    "administrador": "teste"
+}
+Request method:	POST
+-Request URI:	https://serverest.dev/usuarios/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": null,
++    "email": "rosalind.ullrich@yahoo.com",
+    "password": "teste",
+    "administrador": "true"
+}
+Request method:	POST
+-Request URI:	https://serverest.dev/usuarios/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": "Jae Witting",
++    "email": "annamae.skiles@hotmail.com",
+    "password": "test",
+    "administrador": "false"
+}
+Request method:	POST
+-Request URI:	https://serverest.dev/usuarios/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": "Jae Witting",
++    "email": "annamae.skiles@hotmail.com",
+    "password": "test",
+    "administrador": "false"
+}
+Request method:	POST
+-Request URI:	https://serverest.dev/usuarios/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": "Dagny",
+    "email": "",
+    "password": "teste",
+    "administrador": "true"
+}
+	Request method:	POST
+	-Request URI:	https://serverest.dev/usuarios/
+	Proxy:			<none>
+	Request params:	<none>
+	Query params:	<none>
+	Form params:	<none>
+	Path params:	<none>
+	Headers:		Accept=*/*
+	"				Content-Type=application/json
+	Cookies:		<none>
+	Multiparts:		<none>
+	Body:
+	{
+	    "nome": "Walker",
+	(    "email": "marva.collier@gmail.com",
+	    "password": "teste",
+	    "administrador": "true"
+	}
+	HTTP/1.1 201 Created
+	$Date: Mon, 27 Dec 2021 19:42:01 GMT
+	.Content-Type: application/json; charset=utf-8
+	Content-Length: 82
+	Connection: keep-alive
+	Access-Control-Allow-Origin: *
+	x-dns-prefetch-control: off
+	x-frame-options: SAMEORIGIN
+	?strict-transport-security: max-age=15552000; includeSubDomains
+	x-download-options: noopen
+	 x-content-type-options: nosniff
+	 x-xss-protection: 1; mode=block
+	>x-moesif-transaction-id: 0a14f3c4-0a6d-406a-abd6-3d426afcb6dc
+	
+	{
+	1    "message": "Cadastro realizado com sucesso",
+	    "_id": "cjmn5vl2u3VhFObV"
+	}
+
+Request method:	POST
+
+-Request URI:	https://serverest.dev/usuarios/
+
+Proxy:			<none>
+
+Request params:	<none>
+
+Query params:	<none>
+
+Form params:	<none>
+
+Path params:	<none>
+
+Headers:		Accept=*/*
+
+"				Content-Type=application/json
+
+Cookies:		<none>
+
+Multiparts:		<none>
+
+Body:
+
+{
+
+    "nome": "Altagracia",
+
+*    "email": "marica.schulist@gmail.com",
+
+    "password": "",
+
+    "administrador": "true"
+
+}
+Request method:	POST
+-Request URI:	https://serverest.dev/usuarios/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": "",
+)    "email": "cleo.goldner@hotmail.com",
+    "password": "teste",
+    "administrador": "true"
+}
+Request method:	POST
+-Request URI:	https://serverest.dev/usuarios/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": "Esta",
+(    "email": "deshawn.bayer@gmail.com",
+    "password": null,
+    "administrador": "true"
+}
