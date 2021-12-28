@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Create User API Test" tests="11" skipped="0" failures="0" errors="0" timestamp="2021-12-27T19:46:13" hostname="nuc10-i7-c4c8" time="9.094">
+<testsuite name="Create User API Test" tests="11" skipped="0" failures="0" errors="0" timestamp="2021-12-28T11:43:01" hostname="nuc10-i7-c4c8" time="8.241">
   <properties/>
-  <testcase name="When register a user without Admin type, then user should not be created" classname="integration.tests.user.CreateUserTest" time="2.232"/>
-  <testcase name="When register a user with null email, then user should not be created" classname="integration.tests.user.CreateUserTest" time="0.503"/>
-  <testcase name="When register a user, then user should be saved with success" classname="integration.tests.user.CreateUserTest" time="0.963"/>
-  <testcase name="When register a user with a Invalid Admin type, then user should not be created" classname="integration.tests.user.CreateUserTest" time="0.473"/>
-  <testcase name="When register a user with null name, then user should not be created" classname="integration.tests.user.CreateUserTest" time="0.452"/>
-  <testcase name="When register a user with a existent email, then user should not be created" classname="integration.tests.user.CreateUserTest" time="1.639"/>
-  <testcase name="When register a user with a empty email, then user should not be created" classname="integration.tests.user.CreateUserTest" time="0.448"/>
-  <testcase name="When register a Admin user, then user should be saved with success" classname="integration.tests.user.CreateUserTest" time="0.867"/>
-  <testcase name="When register a user without password, then user should not be created" classname="integration.tests.user.CreateUserTest" time="0.467"/>
-  <testcase name="When register a user with a empty name, then user should not be created" classname="integration.tests.user.CreateUserTest" time="0.517"/>
-  <testcase name="When register a user with null password, then user should not be created" classname="integration.tests.user.CreateUserTest" time="0.518"/>
+  <testcase name="When register a user without Admin type, then user should not be created" classname="integration.tests.user.CreateUserTest" time="1.828"/>
+  <testcase name="When register a user with null email, then user should not be created" classname="integration.tests.user.CreateUserTest" time="0.443"/>
+  <testcase name="When register a user, then user should be saved with success" classname="integration.tests.user.CreateUserTest" time="1.008"/>
+  <testcase name="When register a user with a Invalid Admin type, then user should not be created" classname="integration.tests.user.CreateUserTest" time="0.413"/>
+  <testcase name="When register a user with null name, then user should not be created" classname="integration.tests.user.CreateUserTest" time="0.471"/>
+  <testcase name="When register a user with a existent email, then user should not be created" classname="integration.tests.user.CreateUserTest" time="1.292"/>
+  <testcase name="When register a Admin user, then user should be saved with success" classname="integration.tests.user.CreateUserTest" time="0.831"/>
+  <testcase name="When register a user with a empty email, then user should not be created" classname="integration.tests.user.CreateUserTest" time="0.508"/>
+  <testcase name="When register a user with a empty name, then user should not be created" classname="integration.tests.user.CreateUserTest" time="0.512"/>
+  <testcase name="When register a user with empty password, then user should not be created" classname="integration.tests.user.CreateUserTest" time="0.413"/>
+  <testcase name="When register a user with null password, then user should not be created" classname="integration.tests.user.CreateUserTest" time="0.509"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://serverest.dev/usuarios/
 Proxy:			<none>
@@ -25,8 +25,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "nome": "Harley",
-    "email": "jarrett.goyette@yahoo.com",
+    "nome": "Cleotilde",
+    "email": "joshua.leannon@gmail.com",
     "password": "teste",
     "administrador": ""
 }
@@ -43,7 +43,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "nome": "Verona",
+    "nome": "Ivory",
     "email": null,
     "password": "teste",
     "administrador": "true"
@@ -61,28 +61,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "nome": "Dr. Christina Kuhlman",
-    "email": "jeff.homenick@yahoo.com",
+    "nome": "Max Ritchie DVM",
+    "email": "son.bins@hotmail.com",
     "password": "test",
     "administrador": "false"
-}
-HTTP/1.1 201 Created
-Date: Mon, 27 Dec 2021 19:41:57 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 82
-Connection: keep-alive
-Access-Control-Allow-Origin: *
-x-dns-prefetch-control: off
-x-frame-options: SAMEORIGIN
-strict-transport-security: max-age=15552000; includeSubDomains
-x-download-options: noopen
-x-content-type-options: nosniff
-x-xss-protection: 1; mode=block
-x-moesif-transaction-id: db6c39f3-9f71-4af1-afdd-5f23731dbc57
-
-{
-    "message": "Cadastro realizado com sucesso",
-    "_id": "ycn9G5KWjSo7YCe6"
 }
 Request method:	POST
 Request URI:	https://serverest.dev/usuarios/
@@ -97,8 +79,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "nome": "Brock",
-    "email": "theron.mayert@hotmail.com",
+    "nome": "Reggie",
+    "email": "darnell.heller@gmail.com",
     "password": "teste",
     "administrador": "teste"
 }
@@ -116,7 +98,7 @@ Multiparts:		<none>
 Body:
 {
     "nome": null,
-    "email": "rosalind.ullrich@yahoo.com",
+    "email": "brady.halvorson@yahoo.com",
     "password": "teste",
     "administrador": "true"
 }
@@ -133,8 +115,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "nome": "Jae Witting",
-    "email": "annamae.skiles@hotmail.com",
+    "nome": "Harold Strosin",
+    "email": "malinda.crooks@yahoo.com",
     "password": "test",
     "administrador": "false"
 }
@@ -151,8 +133,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "nome": "Jae Witting",
-    "email": "annamae.skiles@hotmail.com",
+    "nome": "Harold Strosin",
+    "email": "malinda.crooks@yahoo.com",
     "password": "test",
     "administrador": "false"
 }
@@ -169,7 +151,25 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "nome": "Dagny",
+    "nome": "Annalisa",
+    "email": "lashanda.cruickshank@hotmail.com",
+    "password": "teste",
+    "administrador": "true"
+}
+Request method:	POST
+Request URI:	https://serverest.dev/usuarios/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "nome": "Charolette",
     "email": "",
     "password": "teste",
     "administrador": "true"
@@ -187,28 +187,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "nome": "Walker",
-    "email": "marva.collier@gmail.com",
+    "nome": "",
+    "email": "luetta.jaskolski@yahoo.com",
     "password": "teste",
     "administrador": "true"
-}
-HTTP/1.1 201 Created
-Date: Mon, 27 Dec 2021 19:42:01 GMT
-Content-Type: application/json; charset=utf-8
-Content-Length: 82
-Connection: keep-alive
-Access-Control-Allow-Origin: *
-x-dns-prefetch-control: off
-x-frame-options: SAMEORIGIN
-strict-transport-security: max-age=15552000; includeSubDomains
-x-download-options: noopen
-x-content-type-options: nosniff
-x-xss-protection: 1; mode=block
-x-moesif-transaction-id: 0a14f3c4-0a6d-406a-abd6-3d426afcb6dc
-
-{
-    "message": "Cadastro realizado com sucesso",
-    "_id": "cjmn5vl2u3VhFObV"
 }
 Request method:	POST
 Request URI:	https://serverest.dev/usuarios/
@@ -223,8 +205,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "nome": "Altagracia",
-    "email": "marica.schulist@gmail.com",
+    "nome": "Brady",
+    "email": "anjelica.goldner@yahoo.com",
     "password": "",
     "administrador": "true"
 }
@@ -241,26 +223,8 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "nome": "",
-    "email": "cleo.goldner@hotmail.com",
-    "password": "teste",
-    "administrador": "true"
-}
-Request method:	POST
-Request URI:	https://serverest.dev/usuarios/
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "nome": "Esta",
-    "email": "deshawn.bayer@gmail.com",
+    "nome": "Donald",
+    "email": "greta.howe@gmail.com",
     "password": null,
     "administrador": "true"
 }

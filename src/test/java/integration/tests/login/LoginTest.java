@@ -2,6 +2,7 @@ package integration.tests.login;
 
 import integration.factory.LoginDataFactory;
 import integration.pojo.LoginPojo;
+import integration.pojo.UserPojo;
 import integration.utils.LoginUtil;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.*;
@@ -25,6 +26,7 @@ public class LoginTest {
     @Test
     @DisplayName("When login with a valid user, then user should login with success")
     public void userShouldLoginWithSuccess(){
+
         LoginPojo login = LoginDataFactory.loginSuccess();
 
         _loginUtil.loginUser(login)

@@ -1,13 +1,15 @@
 package integration.tests.user;
 
+import com.sun.xml.bind.v2.runtime.reflect.opt.Const;
 import integration.factory.UserDataFactory;
 import integration.pojo.UserPojo;
+import integration.utils.Constants;
 import integration.utils.UserUtil;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.*;
 import static org.hamcrest.Matchers.*;
 
-@DisplayName("Create User API Test")
+@DisplayName("Register User API Test")
 public class CreateUserTest {
 
     @Test
@@ -18,8 +20,7 @@ public class CreateUserTest {
 
         String userID = _userUtil.registerUser(user)
                 .statusCode(HttpStatus.SC_CREATED)
-                .log().all()
-                .body("message", equalTo("Cadastro realizado com sucesso"))
+                .body("message", equalTo(Constants.SUCCESS_MESSAGE_REGISTER))
                 .body("_id", notNullValue())
                 .extract().path("_id");
 
@@ -34,10 +35,9 @@ public class CreateUserTest {
 
         String userID = _userUtil.registerUser(user)
             .statusCode(HttpStatus.SC_CREATED)
-                .log().all()
-                .body("message", equalTo("Cadastro realizado com sucesso"))
+            .body("message", equalTo(Constants.SUCCESS_MESSAGE_REGISTER))
             .body("_id", notNullValue())
-                    .extract().path("_id");
+                .extract().path("_id");
 
         _userUtil.deleteUser(userID);
     }
@@ -50,7 +50,7 @@ public class CreateUserTest {
 
         _userUtil.registerUser(user)
                 .statusCode(HttpStatus.SC_BAD_REQUEST)
-                .body("nome", equalTo("nome não pode ficar em branco"));
+                .body("nome", equalTo(Constants.FAILED_MESSAGE_EMPTY_USER_NAME));
 
     }
 
@@ -62,19 +62,19 @@ public class CreateUserTest {
 
         _userUtil.registerUser(user)
                 .statusCode(HttpStatus.SC_BAD_REQUEST)
-                .body("nome", equalTo("nome deve ser uma string"));
+                .body("nome", equalTo(Constants.FAILED_MESSAGE_NULL_USER_NAME));
 
     }
 
     @Test
     @DisplayName("When register a user with a empty email, then user should not be created")
-    public void whenRegisterUserWithoutEmailShouldNotBeCreated(){
+    public void whenRegisterUserWithEmptyEmailShouldNotBeCreated(){
 
         UserPojo user = new UserDataFactory().userWithEmptyEmail();
 
         _userUtil.registerUser(user)
                 .statusCode(HttpStatus.SC_BAD_REQUEST)
-                .body("email", equalTo("email não pode ficar em branco"));
+                .body("email", equalTo(Constants.FAILED_MESSAGE_EMPTY_USER_EMAIL));
 
     }
 
@@ -86,7 +86,7 @@ public class CreateUserTest {
 
         _userUtil.registerUser(user)
                 .statusCode(HttpStatus.SC_BAD_REQUEST)
-                .body("email", equalTo("email deve ser uma string"));
+                .body("email", equalTo(Constants.FAILED_MESSAGE_NULL_USER_EMAIL ));
 
     }
 
@@ -101,21 +101,21 @@ public class CreateUserTest {
 
         _userUtil.registerUser(user)
                 .statusCode(HttpStatus.SC_BAD_REQUEST)
-                .body("message", equalTo("Este email já está sendo usado"));
+                .body("message", equalTo(Constants.FAILED_MESSAGE_EXISTENT_USER_EMAIL));
 
         _userUtil.deleteUser(userID);
     }
 
 
     @Test
-    @DisplayName("When register a user without password, then user should not be created")
-    public void whenRegisterUserWithoutPasswordShouldNotBeCreated(){
+    @DisplayName("When register a user with empty password, then user should not be created")
+    public void whenRegisterUserWithEmptyPasswordShouldNotBeCreated(){
 
         UserPojo user = new UserDataFactory().userWithEmptyPassword();
 
         _userUtil.registerUser(user)
                 .statusCode(HttpStatus.SC_BAD_REQUEST)
-                .body("password", equalTo("password não pode ficar em branco"));
+                .body("password", equalTo(Constants.FAILED_MESSAGE_EMPTY_USER_PASSWORD));
 
     }
 
@@ -127,7 +127,7 @@ public class CreateUserTest {
 
         _userUtil.registerUser(user)
                 .statusCode(HttpStatus.SC_BAD_REQUEST)
-                .body("password", equalTo("password deve ser uma string"));
+                .body("password", equalTo(Constants.FAILED_MESSAGE_NULL_USER_PASSWORD));
 
     }
 
@@ -139,7 +139,7 @@ public class CreateUserTest {
 
         _userUtil.registerUser(user)
                 .statusCode(HttpStatus.SC_BAD_REQUEST)
-                .body("administrador", equalTo("administrador deve ser 'true' ou 'false'"));
+                .body("administrador", equalTo(Constants.FAILED_MESSAGE_USER_ADMIN_TYPE));
 
     }
 
@@ -151,7 +151,7 @@ public class CreateUserTest {
 
         _userUtil.registerUser(user)
                 .statusCode(HttpStatus.SC_BAD_REQUEST)
-                .body("administrador", equalTo("administrador deve ser 'true' ou 'false'"));
+                .body("administrador", equalTo(Constants.FAILED_MESSAGE_USER_ADMIN_TYPE));
 
     }
 

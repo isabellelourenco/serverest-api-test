@@ -64,6 +64,14 @@ public class UserUtil {
                 .then();
     }
 
+    public ValidatableResponse listUsers(){
+        return given()
+                .contentType(ContentType.JSON)
+                .when()
+                .get(USER_BASE_URL)
+                .then();
+    }
+
 
     //PATH
     private static final String USER_BASE_URL = "https://serverest.dev/usuarios/";
